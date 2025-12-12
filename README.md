@@ -15,7 +15,7 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 
 ## Server para Banco de Dados (Postgresql)
 
-### Instalar e configurar o Mysql
+### Instalar e configurar o Postgresql
 
 com o pacotes da maquina atualizada digite o comando para instalar a instancia do MySQL
 
