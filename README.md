@@ -17,10 +17,31 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 
 ### Instalar e configurar o Postgresql
 
-Antes de começar, começe instalando alguns complementos:
-
+Antes de começar, vamos atualizar o source.list:
+ o caminho da source.list é: nano /etc/apt/sources.list
+ copie abaixo e cole na source.list.
 ```BASH
-sudo apt install mysql-server
+#############################################################################################################
+##                               Repositórios Oficiais - Debian 13 "Trixie"                                ##
+#############################################################################################################
+## Para habilitar os repos de código fonte (deb-src) e Backports basta retirar a # da linha correspondente ##
+#############################################################################################################
+
+deb https://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+
+deb https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+deb-src https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+
+deb https://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
+
+## Debian Trixie Backports
+deb https://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
+deb-src https://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
+
+##############################################################################################################
+
 ```
 inicie o serviço:
 ```BASH
