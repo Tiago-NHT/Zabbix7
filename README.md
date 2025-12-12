@@ -17,7 +17,7 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 
 ### Instalar e configurar o Postgresql
 
-com o pacotes da maquina atualizada digite o comando para instalar a instancia do MySQL
+Antes de começar, começe instalando alguns complementos:
 
 ```BASH
 sudo apt install mysql-server
