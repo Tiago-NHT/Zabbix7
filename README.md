@@ -1,17 +1,19 @@
-# Zabbix 6 em 3 camadas 
+# Zabbix 7 em 3 camadas
+(ESSA INSTALAÇÃO É PARA COLETAR MAIS DE 100 HOSTS)
+
 documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma com parte web e a outra com o zabbix server.
 
 ## Requisitos:
 
-| 1 server para Banco de Dados (MySQL) | 1 server para o Frontend (NGINX) | 1 server para o Backend (Zabbix server)  |
+| 1 server para Banco de Dados (Postgresql) | 1 server para o Frontend (NGINX) | 1 server para o Backend (Zabbix server)  |
 |----------|----------|----------|
 | Memory: 8 GB      | Memory: 8 GB      | Memory: 8 GB      |
 | VCPU: 6      | VCPU: 6      | VCPU: 6      |
-| Disk: 50 GB      | Disk: 32 GB      | Disk: 32 GB      |
-| SO: Ubuntu 22.04      | SO: Ubuntu 22.04      | SO: Ubuntu 22.04      |
+| Disk: 200 GB      | Disk: 50 GB      | Disk: 150 GB      |
+| SO: Debian 13.2.0      | SO: Debian 13.2.0      | SO: Debian 13.2.0      |
 
 
-## Server para Banco de Dados (MySQL)
+## Server para Banco de Dados (Postgresql)
 
 ### Instalar e configurar o Mysql
 
