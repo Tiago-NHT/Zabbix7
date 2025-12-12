@@ -7,7 +7,7 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 
 | 1 server para Banco de Dados (Postgresql) | 1 server para o Frontend (NGINX) | 1 server para o Backend (Zabbix server)  |
 |----------|----------|----------|
-| Memory: 8 GB      | Memory: 8 GB      | Memory: 8 GB      |
+| Memory: 10 GB      | Memory: 8 GB      | Memory: 8 GB      |
 | VCPU: 6      | VCPU: 6      | VCPU: 6      |
 | Disk: 200 GB      | Disk: 50 GB      | Disk: 150 GB      |
 | SO: Debian 13.2.0      | SO: Debian 13.2.0      | SO: Debian 13.2.0      |
@@ -17,8 +17,8 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 
 ### Instalar e configurar o Postgresql
 
-Antes de começar, vamos atualizar o source.list:
- o caminho da source.list é:
+Antes de começar, vamos atualizar o source.list.
+O caminho da source.list é:
  ```BASH
  nano /etc/apt/sources.list
 ```
@@ -46,11 +46,11 @@ deb-src https://deb.debian.org/debian trixie-backports main contrib non-free non
 ##############################################################################################################
 
 ```
-inicie o serviço:
+Depois execute o comando:
 ```BASH
-sudo systemctl start mysql.service
+apt update && apt -y upgrade
 ```
-ative o serviço para iniciar com sistema
+Instale alguns complementos:
 ```BASH
 sudo systemctl enable mysql.service
 ```
