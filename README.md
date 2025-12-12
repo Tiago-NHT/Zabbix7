@@ -5,7 +5,7 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 
 ## Requisitos:
 
-| 1 server para Banco de Dados (Postgresql) | 1 server para o Frontend (NGINX) | 1 server para o Backend (Zabbix server)  |
+| 1 server para Banco de Dados (Postgresql) | 1 server para o Frontend (NGINX) | 1 server para o Backend   (Zabbix server)  |
 |----------|----------|----------|
 | Memory: 8 GB      | Memory: 8 GB      | Memory: 8 GB      |
 | VCPU: 6      | VCPU: 6      | VCPU: 6      |
