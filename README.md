@@ -44,7 +44,6 @@ deb https://deb.debian.org/debian trixie-backports main contrib non-free non-fre
 deb-src https://deb.debian.org/debian trixie-backports main contrib non-free non-free-firmware
 
 ##############################################################################################################
-
 ```
 Depois execute o comando:
 ```BASH
