@@ -18,7 +18,10 @@ documentação para instalar o zabbix em 3 camadas, uma com banco de dados, uma 
 ### Instalar e configurar o Postgresql
 
 Antes de começar, vamos atualizar o source.list:
- o caminho da source.list é: nano /etc/apt/sources.list
+ o caminho da source.list é:
+ ```BASH
+ nano /etc/apt/sources.list
+```
  copie abaixo e cole na source.list.
 ```BASH
 #############################################################################################################
